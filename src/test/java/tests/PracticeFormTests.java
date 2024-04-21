@@ -48,16 +48,16 @@ public class PracticeFormTests extends TestBase {
                 .setCity(city)
                 .pressSubmit();
 
-        registrationPage.checkResult(FormKeys.Name.getKey(), fullName)
-                .checkResult(FormKeys.Email.getKey(), userEmail)
-                .checkResult(FormKeys.Gender.getKey(), userGender)
-                .checkResult(FormKeys.Mobile.getKey(), userNumber)
-                .checkResult(FormKeys.Birth.getKey(), birthDate)
-                .checkResult(FormKeys.Subject.getKey(), userSubject)
-                .checkResult(FormKeys.Hobby.getKey(), userHobby)
-                .checkResult(FormKeys.Picture.getKey(), userPictureDisplayed)
-                .checkResult(FormKeys.Address.getKey(), userAddress)
-                .checkResult(FormKeys.StateAndCity.getKey(), stateAndCity);
+        registrationPage.checkResult(FormKeys.NAME.getKey(), fullName)
+                .checkResult(FormKeys.EMAIL.getKey(), userEmail)
+                .checkResult(FormKeys.GENDER.getKey(), userGender)
+                .checkResult(FormKeys.MOBILE.getKey(), userNumber)
+                .checkResult(FormKeys.BIRTH.getKey(), birthDate)
+                .checkResult(FormKeys.SUBJECT.getKey(), userSubject)
+                .checkResult(FormKeys.HOBBY.getKey(), userHobby)
+                .checkResult(FormKeys.PICTURE.getKey(), userPictureDisplayed)
+                .checkResult(FormKeys.ADDRESS.getKey(), userAddress)
+                .checkResult(FormKeys.STATEANDCITY.getKey(), stateAndCity);
     }
 
     @Test
@@ -69,16 +69,16 @@ public class PracticeFormTests extends TestBase {
                 .setUserNumber(userNumber)
                 .pressSubmit();
 
-        registrationPage.checkResult(FormKeys.Name.getKey(), fullName)
-                .checkResult(FormKeys.Email.getKey(), emptyField)
-                .checkResult(FormKeys.Gender.getKey(), userGender)
-                .checkResult(FormKeys.Mobile.getKey(), userNumber)
-                .checkResult(FormKeys.Birth.getKey(), emptyField)
-                .checkResult(FormKeys.Subject.getKey(), emptyField)
-                .checkResult(FormKeys.Hobby.getKey(), emptyField)
-                .checkResult(FormKeys.Picture.getKey(), emptyField)
-                .checkResult(FormKeys.Address.getKey(), emptyField)
-                .checkResult(FormKeys.StateAndCity.getKey(), emptyField);
+        registrationPage.checkResult(FormKeys.NAME.getKey(), fullName)
+                .checkResult(FormKeys.EMAIL.getKey(), emptyField)
+                .checkResult(FormKeys.GENDER.getKey(), userGender)
+                .checkResult(FormKeys.MOBILE.getKey(), userNumber)
+                .checkResult(FormKeys.BIRTH.getKey(), emptyField)
+                .checkResult(FormKeys.SUBJECT.getKey(), emptyField)
+                .checkResult(FormKeys.HOBBY.getKey(), emptyField)
+                .checkResult(FormKeys.PICTURE.getKey(), emptyField)
+                .checkResult(FormKeys.ADDRESS.getKey(), emptyField)
+                .checkResult(FormKeys.STATEANDCITY.getKey(), emptyField);
     }
 
     @Test

@@ -35,12 +35,8 @@ public class RandomUtils {
     }
 
     public static String getRandomDay() {
-        String day = String.valueOf(date.getDate());
-        if ( day.length() < 2 ) {
-            return "0" + day;
-        } else {
-            return day;
-        }
+
+        return String.format("%02d", date.getDate());
     }
 
     public static String getRandomMonth() {
