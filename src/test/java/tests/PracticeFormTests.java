@@ -57,7 +57,7 @@ public class PracticeFormTests extends TestBase {
                 .checkResult(FormKeys.HOBBY.getKey(), userHobby)
                 .checkResult(FormKeys.PICTURE.getKey(), userPictureDisplayed)
                 .checkResult(FormKeys.ADDRESS.getKey(), userAddress)
-                .checkResult(FormKeys.STATEANDCITY.getKey(), stateAndCity);
+                .checkResult(FormKeys.STATE_AND_CITY.getKey(), stateAndCity);
     }
 
     @Test
@@ -78,7 +78,7 @@ public class PracticeFormTests extends TestBase {
                 .checkResult(FormKeys.HOBBY.getKey(), emptyField)
                 .checkResult(FormKeys.PICTURE.getKey(), emptyField)
                 .checkResult(FormKeys.ADDRESS.getKey(), emptyField)
-                .checkResult(FormKeys.STATEANDCITY.getKey(), emptyField);
+                .checkResult(FormKeys.STATE_AND_CITY.getKey(), emptyField);
     }
 
     @Test

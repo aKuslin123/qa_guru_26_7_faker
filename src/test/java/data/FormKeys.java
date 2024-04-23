@@ -10,7 +10,7 @@ public enum FormKeys {
     HOBBY("Hobbies"),
     PICTURE("Picture"),
     ADDRESS("Address"),
-    STATEANDCITY("State and City");
+    STATE_AND_CITY("State and City");
 
     FormKeys(String key) {
         this.key = key;
